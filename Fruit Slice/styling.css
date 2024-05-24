@@ -1,0 +1,169 @@
+html{
+    height: 100%;
+    background: radial-gradient(circle , white , rgb(118, 133, 140));
+}
+
+#container{
+    height: 630px;
+    width: 800px;
+    background: rgb(48, 156, 189);
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgb(3, 55, 115);
+    position: relative;
+}
+
+#score{
+    padding: 10px;
+    background: rgb(237, 117, 241);
+    color: black;
+    border-radius: 5px;
+    position: absolute;
+    left: 730px;
+    /* right: 20vh; */
+    margin-top: 10px;
+    margin-right: px;
+    box-shadow: 4px 4px 10px rgb(130, 10, 130);
+}
+
+#correct{
+    position: absolute;
+    left: 260px;
+    background: rgb(27, 142, 27);
+    padding: 11px;
+    color: white;
+    border-radius: 5px;
+    display: none;
+}
+
+#wrong{
+    position: absolute;
+    left: 260px;
+    background: rgb(210, 29, 5);
+    padding: 11px;
+    color: white;
+    border-radius: 5px;
+    display: none;
+}
+
+#fruitsContainer{
+    width: 650px;
+    height: 400px;
+    background: white;
+    margin: 70px auto 0px auto;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px rgb(66, 55, 75);
+    font-size: 100px;
+    line-height: 150px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+}
+
+#instruction{
+    width: 450px;
+    height: 60px;
+    background: rgb(3, 156, 95);
+    margin: 15px auto  10px auto;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px rgb(2, 18, 3);
+    font-size: 20px;
+    text-align: center;
+    line-height: 56px;
+}
+
+#choices{
+    width: 500px;
+    height: 100px;
+    margin: 15px auto 0 50px; 
+}
+
+.box{
+    width: 90px;
+    height: 85px;
+    background: rgba(188, 75, 94, 0.523);
+    float: left;
+    margin-right: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 4px 4px 10px rgb(72, 46, 46);
+    font-size: 30px;
+    text-align: center;
+    line-height: 80px;
+    position: relative;
+}
+
+.box:hover{
+    background-color: rgb(89, 87, 87);
+    color: white;
+}
+
+.box:active{
+    box-shadow: 0px 0px;
+    top: 4px;
+}
+
+#startreset{
+    width: 100px;
+    height: 50px;
+    background: rgba(123, 206, 174, 0.523);
+    margin: 30px auto 0 auto;
+    cursor: pointer;
+    box-shadow: 4px 4px 10px rgb(72, 46, 46);
+    font-size: 18px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    /* position: relative; */
+}
+
+#startreset:active{
+    box-shadow: 0px 0px;
+    top: 4px;
+}
+#startreset:hover{
+    background-color: rgb(22, 29, 71);
+    color: white;
+}
+
+#trialsLeft{
+    width: 75px;
+    padding: 9px;
+    position: absolute;
+    top: 27px;
+    left: 30px;
+    background: rgb(193, 209, 135);
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px rgb(72, 46, 46);
+    /* visibility: hidden; */
+    display: none;
+}
+
+#gameOver{
+    height: 200px;
+    width: 480px;
+    background: linear-gradient(rgb(227, 95, 95), rgb(177 71 194));
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 170px;
+    left: 170px;
+    z-index: 2;
+    display: none;
+}
+
+.life{
+    width: 20px;
+    height: 20px;
+    padding: 2px 2px 1px 1px;
+    
+}
+
+.fruit{
+    display: none;
+    position: absolute;
+}
